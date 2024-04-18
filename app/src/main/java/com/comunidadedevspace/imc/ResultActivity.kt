@@ -3,6 +3,7 @@ package com.comunidadedevspace.imc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 
 const val KEY_RESULT_BMI = "ResultActivity.KEY_BMI"
 
@@ -18,18 +19,27 @@ class ResultActivity : AppCompatActivity() {
 
         tvResult.text = result.toString()
 
-        val classification: String = if (result <= 18.5f) {
-            "THINNESS"
+        val classification: String
+        val textColor: Int
+
+        if (result <= 18.5f) {
+            classification ="THINNESS"
+            textColor = ContextCompat.getColor(this, R.color.thinness_color)
         } else if (result > 18.5f && result <= 24.9f) {
-            "NORMAL"
+            classification ="NORMAL"
+            textColor = ContextCompat.getColor(this, R.color.normal_color)
         } else if (result > 25f && result <= 29.9f) {
-            "OVERWEIGHT"
+            classification ="OVERWEIGHT"
+            textColor = ContextCompat.getColor(this, R.color.overweight_color)
         } else if ( result > 30f && result <= 39.9f) {
-            "OBESITY"
+            classification ="OBESITY"
+            textColor = ContextCompat.getColor(this, R.color.obesity_color)
         } else {
-            "SEVERE OBESITY"
+            classification ="SEVERE OBESITY"
+            textColor = ContextCompat.getColor(this, R.color.severe_obesity_color)
         }
 
         tvClassification.text = classification
+        tvClassification.setTextColor(textColor)
     }
 }
