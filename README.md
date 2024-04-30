@@ -1,19 +1,39 @@
-# Calculadora IMC
-Desc
+# BMI Calculator
+Calculadora de IMC foi um aplicativo que desenvolvi para dar meus primeiros passos com desenvolvimento Android. Eu participei do desafio 10D na comunidade DevSpace e consegui sair do ZERO. 
+
+
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src="/result/Screenshot_20240429_175625.png" width="260">&emsp;<img src="/result/Screenshot_20240418_200127.png" width="260">&emsp;<img src="/result/Screenshot_20240418_200254.png" width="260">
 
 ## Tecnologias
-Techs
+* Kotlin
+* Activity para host de telas
+* ViewGroup
+    * RelativeLayout
+    * LinearLayout
+- Components de UI
+    - TextView
+    - EditText
+    - Button
+- Toast para display de mensagens
+- Intent Explicita para abrir a segunda Activity
+- FindViewById para recuperar components de UI
+- String resource para concatenação de textos
 
+
+### TODO
+- Melhorar estilização do app
+
+## Author
+Luis Jimenez Aguilera
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Luis Jimenez Aguilera
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
