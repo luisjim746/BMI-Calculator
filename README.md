@@ -11,7 +11,7 @@ BMI Calculator has been a project developed to enhance the user experience of a 
 * Kotlin
 * Activity for screen hosting
 * ViewGroup
-    * RelativeLayout
+    * ConstraintLayout
     * LinearLayout
 - Components de UI
     - TextView
